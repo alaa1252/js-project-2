@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+  <div class="bg-gray-800 text-white p-6 rounded-lg shadow w-80">
+
+    <h1 class="text-xl font-bold mb-4 text-center text-blue-400">
+      Temperature Converter
+    </h1>
+
+    <input id="temp" type="number" placeholder="Enter temperature"
+      class="w-full border border-gray-600 bg-gray-700 text-white p-2 mb-3 rounded">
+
+    <button onclick="toF()"
+      class="w-full bg-blue-600 p-2 rounded mb-2">
+      Convert to Fahrenheit
+    </button>
+
+    <button onclick="toC()"
+      class="w-full bg-green-600 p-2 rounded">
+      Convert to Celsius
+    </button>
+
+    <div id="output"
+      class="mt-4 bg-gray-700 p-2 rounded text-sm whitespace-pre-wrap">
+      Result
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
